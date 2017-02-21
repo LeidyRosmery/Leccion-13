@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> Mi Primer Formulario </title>
+</head>
+  <h1> FORMULARIO DE DATOS </h1>
+<body ALIGN=center >
+<section>
+  <form class="" action="index.html" method="post">
+    <div><br>
+      <label for="nombre"> Nombre </label><br>
+      <input type="text" id="nombre" required="">
+    </div>
+    <div><br>
+      <label for="apellido"> Apellidos </label><br>
+      <input type="text" id="apellido" required="">
+    </div>
+    <div><br>
+      <label for="telefono"> Telefono </label><br>
+      <input type="text" id="telefono" pattern="^[9]\d{8}$" required="">
+    </div>
+    <div>
+      <p> Escoge tu carro para continuar</p>
+      <select name="Seleccion" required="">
+        <option selected disabled value="">Escoge tu carro</option>
+        <option value="Volvo">Volvo</option>
+        <option value="Saa">Saab</option>
+        <option value="Mercedes">Mercedes</option>
+        <option value="Audi">Audi</option>
+      </select>
+    </div>
+    <div><br>
+      <label for="email"> Email </label><br>
+      <input type="email" id="contraseña" required=""  pattern="^[9|8|7|6]\d{8}$" /><br>
+    </div>
+    <div><br>
+      <label for="contraseña"> Crea tu Contraseña </label><br>
+      <input type="password" id="contraseña" required=""  pattern=".{6,}">
+    </div>
+    <div><br>
+      <button type="submit" name="send"> Enviar </button>
+    </div>
+  </form>
+</section>
+</body>
+</html>
